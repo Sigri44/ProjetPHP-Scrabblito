@@ -13,6 +13,11 @@ $("send-button").on("click", function () {
     })
         .done(function (response) {
             console.log(response)
+            if (response.word) {
+                alert("bravo!")
+            } else {
+                alert("bouhou!")
+            }
         })
 })
 
